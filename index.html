@@ -1,0 +1,52 @@
+<!--
+
+    - Cabecera:
+    -- Autor: Abraham Josué Velásquez Granados
+    -- Ciclo y Modulo: 2º DAW / DWEC
+    -- Fecha: 26/01/26
+    -- Practica U5.2: Se va a generar un tablero de juego que 
+                      será una cuadrícula de 4X4 numerada del 1 al 16
+                       
+                      - Cada fila tendrá un color específico: 
+                        (Fila 1: Amarilla. Fila 2: Rosa. 
+                         Fila 3: Verde. Fila 4: Morada).
+
+                      - Cuando el ratón pase sobre una celda, el fondo 
+                        de esa celda se oscurecerá ligeramente, dándole 
+                        un efecto visual. Este cambio de color se logrará 
+                        usando un evento de tipo mouseenter y mouseleave.
+
+                      - Si el jugador hace clic en una celda, esta cambiará 
+                        su color de fondo a blanco, y su contenido (número) 
+                        desaparecerá, dándole un efecto visual de "desaparición". 
+                        Este cambio de estado se logrará mediante un evento de 
+                        tipo click.
+
+                      - El objetivo es conseguir poner todas las celdas blancas 
+                        en 30 segundos. Si se consigue aparecerá un mensaje de 
+                        éxito o de derrota en caso contrario.
+                        
+                      - Debe existir un botón RESET que inicie el juego de nuevo
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultimate Puzzle 16</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+</head>
+<body>
+
+    <h1>Puzzle Deslizante</h1>
+    
+    <div id="timer">Tiempo: --:--</div>
+
+    <div id="tablero"></div>
+
+    <button id="btnReset">NUEVA PARTIDA</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
