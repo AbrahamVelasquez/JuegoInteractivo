@@ -122,4 +122,5 @@ let iniciarJuego = function() {
 btnReset.addEventListener("click", iniciarJuego);
 
 // ¡Arrancamos!
+// Línea nueva
 iniciarJuego();
